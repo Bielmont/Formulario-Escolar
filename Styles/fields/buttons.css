@@ -10,7 +10,7 @@ button {
         color: white;
         background-color: #E43A12;
 
-        &:hover, &:focus-within {
+        &:hover, &:focus {
             background-color: #F3541C;
         }
     }
@@ -18,10 +18,12 @@ button {
     &.btn-secondary {
         margin-left: auto;
         border: 1px solid var(--text-highlight);
+
+        &:hover, &:focus-within {
+            outline: .25rem solid var(--surface-secondary);
+            color:#E43A12 ;
+        }
     }
 
-    &:hover, &:focus-within {
-        outline: .25rem solid var(--surface-secondary);
-        color:#E43A12 ;
-    }
+    
 }
